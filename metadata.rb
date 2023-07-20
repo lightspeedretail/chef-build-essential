@@ -2,10 +2,11 @@ name              'build-essential'
 maintainer        'Chef Software, Inc.'
 maintainer_email  'cookbooks@chef.io'
 license           'Apache 2.0'
-description       'Installs C compiler / build tools'
+description       'LS Forks of public cookbook Installs C compiler / build tools'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version           '3.2.0'
+version           '3.2.1'
 recipe            'build-essential', 'Installs packages required for compiling C software from source.'
+chef_version      '~> 12.12'
 
 supports 'amazon'
 supports 'centos'
@@ -24,5 +25,5 @@ supports 'windows'
 
 depends 'seven_zip'
 
-source_url 'https://github.com/chef-cookbooks/build-essential' if respond_to?(:source_url)
-issues_url 'https://github.com/chef-cookbooks/build-essential/issues' if respond_to?(:issues_url)
+source_url       'https://github.com/lightspeedretail/chef-build-essential'
+issues_url       'https://jira.atlightspeed.net/projects/HSRE'
